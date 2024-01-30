@@ -8,25 +8,25 @@ export const serviceData = [
     {
       icon: "ri-truck-line",
       title: "Free Shipping",
-      subtitle: "Lorem ipsum dolor sit amet.",
+      subtitle: "Fast and Reliable Delivery",
       bg: "#fdefe6",
     },
     {
       icon: "ri-refresh-line",
       title: "Easy Returns",
-      subtitle: "Lorem ipsum dolor sit amet.",
+      subtitle: "Hassle-Free Return Process",
       bg: "#ceebe9",
     },
     {
       icon: "ri-secure-payment-line",
       title: "Secure Payment",
-      subtitle: "Lorem ipsum dolor sit amet.",
+      subtitle: "Protecting Your Financial Information",
       bg: "#e2f2b2",
     },
     {
       icon: "ri-exchange-dollar-line",
       title: " Back Guarantee",
-      subtitle: "Lorem ipsum dolor sit amet.",
+      subtitle: "Customer Satisfaction is Our Priority",
       bg: "#d6e5fb",
     },
   ];
