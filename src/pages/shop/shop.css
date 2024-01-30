@@ -1,0 +1,18 @@
+.product {
+    display: flex;
+    
+}
+.product-block {
+    flex: 5;
+    margin: 20px;
+}
+.filter-block {
+    flex: 1;
+    margin-left: 23px;
+}
+
+@media all and (max-width: 500px) {
+    .product {
+        flex-direction: column;
+    }
+}

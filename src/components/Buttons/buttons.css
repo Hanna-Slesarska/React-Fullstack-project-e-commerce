@@ -1,0 +1,15 @@
+.icon-cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-cart-box {
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background-color: teal;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 35px;
+    cursor: pointer;
+  }

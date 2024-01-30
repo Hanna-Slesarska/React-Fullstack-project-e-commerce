@@ -1,0 +1,110 @@
+.bg-image {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)) , url('about.jpg');
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg-image h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.bg-image p {
+    width: 70%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+}
+
+/******** *********/
+.container_about {
+    min-height: 70vh;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-header {
+    margin-left: 70px;
+  }
+  
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .desc-about {
+    width: 100%;
+    max-width: 500px;
+    color: #565e73c9;
+    margin-bottom: 30px;
+    
+  }
+  
+  .travel-about-tittle1 {
+    color: teal;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 26px;
+    margin: 0;
+  
+  }
+  
+  .travel-about-tittle2 {
+    color: #132742;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .container_about_mainInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .about_mainInfo_par1 {
+    color: teal;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .about_mainInfo_par2 {
+    color: #565e73c9;
+    font-size: 16px;
+    margin: 0;
+  }
+  @media all and  (max-width: 768px) {
+    .container_about { 
+      flex-direction: column;
+    }
+    .about-img {
+      margin-bottom: 20px;
+    }
+    .travel-about-tittle1,  .travel-about-tittle2 {
+      text-align: center;
+    }
+    .about {
+      justify-content: center;
+    }
+  }
+  @media all and  (max-width: 500px) {
+    .about-img {
+      width: 250px;
+    }
+    .bg-image p { 
+      font-size: 12px;
+    }
+    .about-header {
+      margin: 20px;
+    }
+  }

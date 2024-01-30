@@ -1,0 +1,10 @@
+.scroll-btn {
+    position: fixed;
+right: 50px;
+bottom: 120px;
+height: 20px;
+font-size: 3rem;
+z-index: 1;
+cursor: pointer;
+color: rgba(0, 128, 128, 0.665);
+}

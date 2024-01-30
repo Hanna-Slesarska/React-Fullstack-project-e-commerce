@@ -1,0 +1,49 @@
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 180px;
+}
+h2 {
+    flex: 2;
+    text-transform: capitalize;
+    font-size: 28px;
+  }
+
+.top p{
+    flex:3;
+    color:gray;
+    line-height: 25px;
+    font-size: 14px;
+  }
+  .bottom{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  @media all and  (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        margin: 30px;
+        align-items: center;
+    }
+}
+  @media all and  (max-width: 500px) {
+    .top {
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        padding: 20px;
+    }
+    .top p {
+      text-align: center;
+    }
+    .bottom{ 
+      
+    }
+
+  }

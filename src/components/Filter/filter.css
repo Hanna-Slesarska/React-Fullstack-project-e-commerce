@@ -1,0 +1,55 @@
+
+.filters {
+    position: relative;
+    overflow: hidden;
+}
+.categorySelected {
+    color: #000;
+    font-weight: 700;
+}
+.categoryButton {
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 18px;
+   
+}
+
+.categoryButton:hover {
+    color: teal;
+}
+
+.categoryButton::before {
+   
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    top: 40px;
+    background-color: teal;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform 0.2s ease;
+  }
+
+.categoryButton:hover::before,
+.categoryButton:focus::before {
+    /*transform: scale(1);*/
+    transform: translate3d(0, 0, 0);
+  }
+
+  @media all and (max-width: 500px) {
+    .cat {
+        width: 300px;
+        display: flex;
+        margin-left: 30px;
+        flex-wrap: wrap;
+        padding: 10px;
+       
+    }
+    .filters {
+         margin: 5px;
+         padding: 5px;
+    }
+    .categoryButton {
+        margin: 0;
+    }
+  }
