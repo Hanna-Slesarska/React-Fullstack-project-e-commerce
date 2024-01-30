@@ -81,7 +81,7 @@ const Footer = () => {
             
         </div>
         <div className="footer-bottom">
-                <p>Developed with 🤍 by <a className="me" href="https://github.com/Hanna-Slesarska" target="_blank">Hanna Slesarska</a></p>
+                <p>Developed with 🤍 by <Link className="me" to="https://github.com/Hanna-Slesarska">Hanna Slesarska</Link></p>
                 <p>For educational purposes</p>
             </div>
         </div>
