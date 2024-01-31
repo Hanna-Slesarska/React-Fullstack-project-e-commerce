@@ -3,6 +3,7 @@
     justify-content: center;
     margin-bottom: 10px;
     flex-wrap: wrap;
+    
 }
 .services-item {
     padding: 35px 17px ;
@@ -12,6 +13,7 @@
     column-gap: 10px;
     border-radius: 5px;
     cursor: pointer;
+    width: 285px;
 }
 .services-item span i {
     font-size: 27px;

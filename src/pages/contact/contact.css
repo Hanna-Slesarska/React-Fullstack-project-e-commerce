@@ -1,3 +1,27 @@
+.bg-image {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)) , url('../../pages/About/about.jpg');
+    min-height: 400px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bg-image h1 {
+    font-size: 40px;
+    margin: 0;
+}
+.bg-image p {
+    width: 70%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+}
+
 .form {
 text-align: center;
   display: flex;

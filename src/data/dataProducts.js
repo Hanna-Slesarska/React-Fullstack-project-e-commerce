@@ -20,13 +20,13 @@ export const serviceData = [
     {
       icon: "ri-secure-payment-line",
       title: "Secure Payment",
-      subtitle: "Protecting Your Financial Information",
+      subtitle: "Multiple Payment Options",
       bg: "#e2f2b2",
     },
     {
       icon: "ri-exchange-dollar-line",
       title: " Back Guarantee",
-      subtitle: "Customer Satisfaction is Our Priority",
+      subtitle: "Satisfaction Guaranteed",
       bg: "#d6e5fb",
     },
   ];

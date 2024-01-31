@@ -32,12 +32,15 @@
   }
   
   .about-header {
-    width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
   }
   
   .about {
@@ -46,12 +49,25 @@
     justify-content: flex-end;
     
   }
+  .about-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
   .desc-about {
     width: 100%;
     max-width: 500px;
     color: #565e73c9;
     margin-bottom: 30px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+  }
+  .desc-about p {
+    margin: 0;
   }
   .about-img {
     margin-right: 50px;
@@ -92,17 +108,19 @@
     margin: 0;
   }
   @media all and  (max-width: 768px) {
-    .container_about { 
+    .about-header  { 
       flex-direction: column;
     }
     .about-img {
-      margin-bottom: 20px;
+      margin: 0;
+      align-self: center;
     }
     .travel-about-tittle1,  .travel-about-tittle2 {
       text-align: center;
     }
     .about {
       justify-content: center;
+      margin-top: 20px;
     }
   }
   @media all and  (max-width: 500px) {
@@ -112,7 +130,16 @@
     .bg-image p { 
       font-size: 12px;
     }
-    .about-header {
-      margin: 20px;
+    .desc-about {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
+   
+    .container_about_mainInfo {
+      justify-content: space-evenly;
+    }
+   
   }
