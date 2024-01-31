@@ -21,7 +21,7 @@ const CartItem = ({cartItem}) => {
                     <p className="cartItem-title">{items.name}</p>
                     <div className="box2-cartItem">
                         <p className="cartItem-quantity-price">{cartItem.quantity} items(s)</p>
-                        <p className="cartItem-quantity-price cartItem-price">Price: ${items.price*cartItem.quantity}</p>
+                        <p className="cartItem-quantity-price cartItem-price">Price: ${items.price.toFixed(2)*cartItem.quantity}</p>
                     </div>
                 </div>
             <div className="right" >
