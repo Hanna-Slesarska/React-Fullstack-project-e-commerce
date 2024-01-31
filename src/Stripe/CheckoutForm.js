@@ -20,7 +20,7 @@ export const CheckoutForm = () => {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "http://localhost:8080/stripe/charge",
+          "https://sophie-estore.netlify.app/stripe/charge",
           {
             amount: 99,
             id: id,
