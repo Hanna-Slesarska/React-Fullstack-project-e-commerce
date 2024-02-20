@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import axios from "axios";
-import '../App.css'
+
 
 export const CheckoutForm = () => {
   const stripe = useStripe();
   const elements = useElements();
-  const [messageSucces, setMessageSucces] = useState(false);
+  const [messageSuccess, setMessageSucces] = useState(false)
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -20,9 +20,9 @@ export const CheckoutForm = () => {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "https://sophie-estore.netlify.app/stripe/charge",
+          "http://localhost:8000/stripe/charge",
           {
-            amount: 99,
+            amount: 999,
             id: id,
           }
         );
@@ -30,7 +30,7 @@ export const CheckoutForm = () => {
         console.log("Stripe 35 | data", response.data.success);
         if (response.data.success) {
           console.log("CheckoutForm.js 25 | payment successful!");
-          setMessageSucces(true);
+          setMessageSucces(true)
         }
       } catch (error) {
         console.log("CheckoutForm.js 28 | ", error);
@@ -41,17 +41,19 @@ export const CheckoutForm = () => {
   };
 
   return (
-    <div className="pay-form">
-        {!messageSucces ?
-    <form onSubmit={handleSubmit} style={{ maxWidth: 350 }}>
-      <CardElement />
-      <button className="pay-btn">Checkout</button>
-    </form>
-    :
     <div>
-        <p>Your payment was successfull!</p>
+      {!messageSuccess ?
+    <form onSubmit={handleSubmit} style={{ maxWidth: 400 }}>
+      <CardElement />
+      <button>Pay</button>
+    </form>
+:
+    <div>
+      <h2>Yuor payment was successful!</h2>
+      <p>Enjoy your purchase!</p>
     </div>
-    }
+}
     </div>
+      
   );
 };
